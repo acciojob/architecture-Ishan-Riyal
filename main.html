@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+	  body{
+		  width:1100px;
+	  }
+
+	  .content-table{
+		  width:100%;
+		  border-collapse: collapse;
+	  }
+
+	  .content-table tr, td{
+		  border: 1px solid black;
+	  }
+
+	 .image-cell {
+      width: 200px;
+      text-align: center;
+    }
+
+    .image-cell img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .text-cell {
+      width: 600px;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+  </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <script type="text/javascript" src="./script.js"></script>
 
+	<div class='imageContainer'>
+		<img src='https://images.unsplash.com/photo-1519638399535-1b036603ac77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWV8ZW58MHx8MHx8fDA%3D' alt='image-1'/>
+	</div>
+
+	<div>
+		<table class='content-table'>
+			<tr>
+				<td class='image-cell'>
+					<img width=200px src='https://plus.unsplash.com/premium_photo-1698001750831-dc8331d76fd8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmFsbCUyMHdhbGxwYXBlcnxlbnwwfDB8MHx8fDA%3D' alt='image-2' />
+				</td>
+				<td class='text-cell'>
+					<p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ducimus repudiandae voluptatem debitis iure eligendi dolor nisi quae et incidunt!</p>
+				</td>
+				<td class='image-cell'>
+					<img width=200px src='https://images.unsplash.com/photo-1509838174235-432f709c7bfd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhbGwlMjB3YWxscGFwZXJ8ZW58MHwwfDB8fHww' alt='image-3' />
+				</td>
+			</tr>		
+			<tr>
+				<td class='image-cell'>
+					<img width=200px src='https://plus.unsplash.com/premium_photo-1671531113340-beadcd4eb406?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZhbGwlMjB3YWxscGFwZXJ8ZW58MHwwfDB8fHww' alt='image-4' />
+				</td>
+				<td class='text-cell'>
+					<p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ducimus repudiandae voluptatem debitis iure eligendi dolor nisi quae et incidunt!</p>
+				</td>
+				<td class='image-cell'>
+					<img width=200px height=130px src='https://plus.unsplash.com/premium_photo-1661878091370-4ccb8763756a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hlcnJ5JTIwYmxvc3NvbSUyMHdhbGxwYXBlcnxlbnwwfDB8MHx8fDA%3D' alt='image-5' />
+				</td>
+			</tr>			
+		</table>
+	</div>
 </body>
 
 </html>
